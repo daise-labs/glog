@@ -39,11 +39,11 @@
 // This package provides several flags that modify this behavior.
 // As a result, flag.Parse must be called before any logging is done.
 //
-//	-logtostderr=false
+//	-log_to_stderr=false
 //		Logs are written to standard error instead of to files.
-//	-alsologtostderr=false
+//	-log_also_to_stderr=false
 //		Logs are written to standard error as well as to files.
-//	-stderrthreshold=ERROR
+//	-log_stderr_threshold=ERROR
 //		Log events at or above this severity are logged to standard
 //		error as well as to files.
 //	-log_dir=""
@@ -59,13 +59,13 @@
 //		a stack trace will be written to the Info log whenever execution
 //		hits that statement. (Unlike with -vmodule, the ".go" must be
 //		present.)
-//	-v=0
+//	-log_verbose_level=0
 //		Enable V-leveled logging at the specified level.
-//	-vmodule=""
+//	-log_vmodule=""
 //		The syntax of the argument is a comma-separated list of pattern=N,
 //		where pattern is a literal file name (minus the ".go" suffix) or
 //		"glob" pattern and N is a V level. For instance,
-//			-vmodule=gopher*=3
+//			-log_vmodule=gopher*=3
 //		sets the V level to 3 in all Go files whose names begin "gopher".
 //
 package glog
