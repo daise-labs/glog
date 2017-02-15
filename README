@@ -1,3 +1,7 @@
+A fork of the github.com/golang/glog to with the following changes
+	- All command line options start with log_
+	- Provide function to set options programmatically
+
 glog
 ====
 
